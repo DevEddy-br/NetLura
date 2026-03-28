@@ -4,7 +4,7 @@ export const categories = [
         items: [
             {
                 img: "https://uploads.tracklist.com.br/file/uploads-tracklist-com-br/2026/03/o-diabo-veste-prada-2.jpg", top10: true, badge: "Clássico", badgeColor: "green", progress: 50,
-                youtube: "https://www.youtube.com/watch?v=bLvqoHBptjg"
+                youtube: "https://www.youtube.com/watch?v=Qif2dtDuICk"
             },
             {
                 img: "https://aventurasnahistoria.com.br/wp-content/uploads/entretenimento/gladiador_2_VvnGVes.jpg", progress: 0,
