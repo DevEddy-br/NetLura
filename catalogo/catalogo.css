@@ -451,6 +451,7 @@ a:hover {
 @media (max-width: 1024px) {
     .navbar {
         padding: 0 3.5%;
+        height: auto;
     }
 
     .logo {
@@ -460,6 +461,11 @@ a:hover {
     .slider-title {
         font-size: 1.15rem;
         line-height: 1.35rem;
+    }
+
+    .movie-row {
+        padding: 10px 0 50px;
+        margin: 0;
     }
 
     .movie-card {
@@ -502,19 +508,105 @@ a:hover {
     }
 
     .movie-row {
-        padding: 10px 0 50px;
+        padding: 10px 0 40px;
         margin: 0;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .movie-row::-webkit-scrollbar {
+        display: none;
     }
 
     .movie-card {
         min-width: 180px;
         width: 180px;
         height: 104px;
+        scroll-snap-align: start;
+    }
+
+    .movie-card:hover {
+        transform: none;
+        box-shadow: none;
     }
 
     .slider-title {
         font-size: 4vw;
         line-height: 4.5vw;
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        padding: 12px 4%;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .icon {
+        font-size: 18px;
+    }
+
+    .kids-link {
+        font-size: 13px;
+    }
+
+    .slider-header {
+        gap: 8px;
+    }
+
+    .slider-title {
+        font-size: 4.5vw;
+    }
+
+    .movie-card {
+        min-width: 150px;
+        width: 150px;
+        height: 92px;
+    }
+
+    .card-details {
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-left,
+    .navbar-right {
+        align-items: center;
+    }
+
+    .profile-icon {
+        width: 28px;
+    }
+
+    .slider-header {
+        width: 100%;
+    }
+
+    .movie-card {
+        min-width: 150px;
+        width: 150px;
+        height: 88px;
+    }
+
+    .badge-top10 {
+        width: 18px;
+        height: 24px;
+    }
+
+    .details-info {
+        gap: 6px;
+        font-size: 10px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 }
 
@@ -553,41 +645,5 @@ footer {
 @media (max-width: 768px) {
     .footer-links {
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar-left,
-    .navbar-right {
-        align-items: center;
-    }
-
-    .profile-icon {
-        width: 28px;
-    }
-
-    .slider-header {
-        width: 100%;
-    }
-
-    .movie-card {
-        min-width: 150px;
-        width: 150px;
-        height: 88px;
-    }
-
-    .badge-top10 {
-        width: 18px;
-        height: 24px;
-    }
-
-    .details-info {
-        gap: 6px;
-        font-size: 10px;
-    }
-
-    .footer-links {
-        grid-template-columns: 1fr;
-        gap: 10px;
     }
 }
